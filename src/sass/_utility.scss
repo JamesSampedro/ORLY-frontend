@@ -1,0 +1,95 @@
+@import 'config';
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    font-family: $font-stack;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    line-height: 1.6rem;
+    background: rgb(245, 243, 243);
+    min-height: 100vh;
+
+}
+
+.container{
+    overflow-x: hidden;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.hidden{
+    display: none
+}
+
+li{
+    list-style: none;
+}
+
+.link-item{
+    color: white;
+}
+
+.page-header{
+    margin: 1em auto;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    color: $tertiary-color;
+    max-width: 1200px;
+    width: 90%;
+    text-transform: uppercase;
+}
+
+.page{
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    align-items: center;
+}
+
+.card--shadow{
+    box-shadow: 11px 10px 25px -10px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 11px 10px 25px -10px rgba(0,0,0,0.35);
+    -moz-box-shadow: 11px 10px 25px -10px rgba(0,0,0,0.35);
+}
+
+.pc--hidden{
+    display: block;
+}
+
+.mob--hidden{
+    display: none
+}
+
+@media screen and (min-width: 1000px){
+    .pc--hidden{
+        display: none;
+    }
+    .mob--hidden{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .page-header{
+        font-size: 2rem;
+        font-weight: 900;
+        margin:2em auto;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .page-header{
+        font-size: 3rem;
+    }
+}

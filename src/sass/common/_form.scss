@@ -1,0 +1,142 @@
+.form-style{
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__line{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    &__header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    input,
+    .input--basic{
+        padding: 8px;
+        border-radius: 10px;
+        margin: 5px 0 15px;
+        width: 100%;
+    }
+
+    .input--edit{
+        margin-bottom: 10px;
+    }
+
+    label{
+        font-weight: 500;
+    }
+
+    .input__error-message{
+        font-size: .8rem;
+        font-weight: 300;
+        color: red;
+    }
+}
+
+
+@media screen and (min-width:500px){
+    .form-style{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &__line{
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        .input--double{
+            width: 47%;
+        }
+    }
+}
+
+
+
+.labeled-field{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.select{
+    padding: 8px;
+    border: solid 2px black;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.select:focus,
+.select:hover{
+    outline: none;
+}
+
+.btn--next{
+    padding: 5px 15px;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    color: white;
+    margin: 1rem 0;
+    margin-left: auto;
+    cursor: pointer;
+
+    span{
+        margin-left: 10px;
+        position: relative;
+    }
+}
+
+.btn--delete{
+    padding: 5px 15px;
+    background-color: rgb(179, 32, 32);
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    color: white;
+    margin: 1rem 0;
+    margin-left: auto;
+    cursor: pointer;
+
+    span{
+        margin-left: 10px;
+        position: relative;
+    }
+}
+
+.btn--prev{
+    padding: 5px 15px;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    color: white;
+    margin: 1rem 0;
+    margin-right: auto;
+    cursor: pointer;
+
+    span{
+        margin-left: 10px;
+        position: relative;
+    }
+}

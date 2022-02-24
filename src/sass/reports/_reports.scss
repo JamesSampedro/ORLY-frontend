@@ -1,0 +1,19 @@
+.reports{
+    background: white;
+    padding: 5%;
+    border-radius: 25px;
+    &__segment{
+        margin: 1rem;
+        .title{
+            padding: 10px;
+        }
+        .item{
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgb(236, 234, 234);
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.form__reject{
+    display: flex;
+    flex-direction: column;
+
+    .btn--reject{
+        margin-right: auto;
+        padding: .5rem 1rem; 
+        margin-bottom: 1rem;
+        background-color: rgb(173, 65, 65);
+        color: white;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+    }
+}

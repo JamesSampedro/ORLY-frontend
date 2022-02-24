@@ -1,0 +1,70 @@
+.hero{
+    width: 100%;
+    height: 90vh;
+    margin-bottom: 5rem;
+    .content{
+        position: relative;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .heading{
+            text-align: center;
+            font-size: 4rem;
+            margin: 1.5rem 0;
+            line-height: 1.2;
+        }
+
+        .subheading{
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+
+        span{
+            font-size: 5rem;
+            color: yellow;
+        }
+    }
+}
+
+#videoIntro{
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+}
+
+@media screen and (max-width: 500px){
+    .hero{
+        height: 500px;
+        margin-bottom: 3rem;
+        .content{
+            .heading{
+                font-size: 2rem;
+                line-height: .5;
+            }
+
+            .subheading{
+                font-size: 1rem;
+            }
+
+        }
+    }
+
+    #videoIntro{
+        height: 500px;
+    }
+}
+
+
+

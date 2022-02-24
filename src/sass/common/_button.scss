@@ -1,0 +1,70 @@
+.btn{
+    padding: 6px 12px; 
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 25px;
+    border: none;
+}
+
+.btn--standard{
+    background-color: #487D8E;
+    color: white;
+}
+
+p.btn{
+    max-width: 250px;
+    text-align: center;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.btn--y-1{
+    width: 100px;
+}
+.btn--y-2{
+    width: 150px;
+}
+.btn--y-3{
+    width: 200px;
+}
+.btn--y-4{
+    width: 250px;
+}
+.btn--y-5{
+    width: 300px;
+}
+.btn--y-6{
+    width: 350px;
+}
+.btn--y-7{
+    width: 400px;
+}
+
+.btn--red{
+    border: none;
+    background-color: rgb(173, 65, 65);
+    padding: 4px 1rem;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn--blue{
+    border: none;
+    background-color: rgb(72, 72, 148);
+    padding: 4px 1rem;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn__submit--center{
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+    background-color: $primary-color;
+    color: white;
+    cursor: pointer;
+}

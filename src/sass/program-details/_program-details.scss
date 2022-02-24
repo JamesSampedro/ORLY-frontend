@@ -1,0 +1,29 @@
+.program-details-card{
+    padding: 10%;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    min-width: 300px;
+    .program-details-card__title{
+        margin: 0 0 1rem;
+        line-height: 1.2;
+    }
+    .program-details-card__content{
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .column{
+            margin: 0 1.5rem;
+        }
+    }
+
+    .button-wrapper{
+        display: flex;
+    }
+    h3{
+        margin: 8px 0;
+    }
+}

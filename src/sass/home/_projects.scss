@@ -1,0 +1,102 @@
+@import './utility';
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 4rem 10%;
+    .title{
+        text-align: center;
+        margin: 2rem 0;
+        line-height: 1.2;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .card-container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        .card{
+            width: 30%;
+            min-width: 220px;
+            max-width: 280px;
+            height: 160px;
+            margin: 1rem 1rem;
+            background-color: transparent;
+
+            &-inner{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                transition: transform 1500ms;
+                transform-style: preserve-3d;
+
+                &--front,
+                &--back{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                }
+
+                &--front{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2rem;
+                    img{
+                        width: 25%;
+                    }
+                    h2{
+                        font-size: 1.2rem;
+                        color: white;
+                        margin: 8px 0;
+                    }
+                }
+
+                &--back{
+                    transform: rotateY(180deg);
+                    padding: 5%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    p{
+                        text-align: center;
+                        color: white;
+                        font-weight: 600;
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+        .card:hover{
+            .card-inner{
+                transform: rotateY(180deg);
+            }
+        }
+        
+    }
+}
+
+@media screen and (min-width: 500px)
+{
+    .projects{
+        .title{
+            font-size: 3rem;
+        }
+        .card-container{
+            .card{
+                height: 200px;
+                min-width: 240px;
+                &-inner{
+                    &--back{
+                        padding: 10%;
+                    }
+                }
+            }
+        }
+    }
+}

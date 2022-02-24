@@ -1,0 +1,44 @@
+.id-form{
+    display: flex;
+
+    &--card{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin: 2rem auto;
+        max-width: 400px;
+        background-color: rgb(24, 24, 153);
+        border-radius: 15px;
+        padding: 1rem;
+        &--title{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 1rem;
+
+            .seal{
+                width: 40px;
+                height: 40px;
+            }
+
+            h1{
+                font-weight: 500;
+                font-size: 1rem;
+                text-align: center;
+                color: white;
+            }
+        }
+
+        label{
+            color: white;
+        }
+
+        .id-input{
+            padding: 8px;
+            border-radius: 10px;
+            margin: 5px 0;
+        }
+    }
+}

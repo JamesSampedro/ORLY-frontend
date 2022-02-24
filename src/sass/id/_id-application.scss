@@ -1,0 +1,34 @@
+.id-application-page{
+
+    &__instructions{
+        display: flex;
+        flex-direction: row;
+        margin: 2rem 0;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 25px;
+        padding: 1rem;
+        &--svg{
+            display: none;
+            width: 50%;
+            max-width: 500px;
+            margin: 0 1rem; 
+        }
+        &--content{
+            max-width: 500px;
+
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .id-application-page{
+        
+        &__instructions{
+            background-color: white;
+            &--svg{
+                display: block;
+            }
+        }
+    }
+}

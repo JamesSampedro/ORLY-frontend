@@ -1,0 +1,125 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+.form__wrapper{
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+    padding: .5rem;
+    max-width: 900px;
+ 
+    .form__title--blue{
+        color: #1E4186;
+    }
+
+    .form__title--purple{
+        color: #46136D;
+    }
+
+    .form__title{
+        text-align: center;
+        margin: 1rem;
+        line-height: 1.1;
+        width: 80%;
+    }
+
+    .form__container{
+        width: 100%;
+        background-color: #F3F3F3;
+        padding: 5%;
+    }
+
+    .form__name{
+        text-align: center;
+        margin: .25rem 0;
+    }
+
+    .form__instruction{
+        text-align: center;
+        margin: .25rem 0;
+    }
+
+    .form__number-counter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: .5rem 1rem;
+        &--number{
+            width: 50px;
+            text-align: center;
+        }
+        &--button{
+            font-size: 1.5rem;
+            padding:  0 .7rem;
+            font-weight: 600;
+            color: white;
+        }
+        &--blue{
+            background-color: #355881;
+        }
+        &--label{
+            font-weight: 600;
+            text-transform: capitalize;
+            margin-right: .5rem;
+        }
+
+        &--input--wrapper{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        
+    }
+
+    .form__number-counter--wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+
+    .form__disclaimer{
+        margin: 1.5rem .5rem .5rem;
+        font-size: .8rem;
+    }
+}
+.form__wrapper--blue{
+    background-color: rgba(166, 217, 234, 0.6);  
+}
+
+.form__wrapper--purple{
+    background-color: rgba(119, 98, 180, 0.6);
+}
+
+
+@media screen and (min-width: 768px){
+
+    .form__wrapper{
+        padding: 2rem;
+    }
+
+    .form__title{
+        font-size: 3rem;
+        font-weight: 800;
+        padding: 1rem;
+    }
+
+}
+
+ 

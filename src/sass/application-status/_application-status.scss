@@ -1,0 +1,341 @@
+.application-status-page{
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+    &__items{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 800px;
+
+        &--card{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 25px;
+            margin: 1rem 0;
+            width: 100%;
+
+            .card--header{
+                width: 100%;
+                padding: 1rem 1.5rem;
+                display: flex;
+                flex-direction: column;
+
+                .content{   
+                    margin: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    justify-content: center;
+                    &__btn-wrapper{
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: row;
+                        justify-content: center;
+                        margin: 1rem 0;
+                    }
+    
+                    .button{
+                        padding: 8px 0;
+                        width: 180px;
+                        color: white;
+                        border-radius: 25px;
+                        font-weight: 600;
+                        font-size: 1rem;
+                        text-align: center;
+                        cursor: pointer;
+                        margin: 1rem;
+                    }
+    
+                    .application__btn{
+                        padding: 5px 15px;
+                        border: none;
+                        border-radius: 25px;
+                        font-weight: 600;
+                        margin: .5rem 1rem;
+                        cursor: pointer;
+                        width: 100%;
+                        max-width: 120px;
+                    }
+    
+                    .application__btn--next{
+                        background-color: rgb(51, 136, 51);
+                        color: white;
+                        order: 1;
+                    }
+    
+                    .application__btn--reject{
+                        background-color: rgb(173, 65, 65);
+                        color: white;
+                        order: 3;
+                    }
+    
+                    .application__btn--view{
+                        background-color: $primary-color;
+                        color: white;
+                        order: 2;
+                    }
+                }
+    
+                .status{
+                    margin: 1rem 0;
+                    .label{
+                        padding: 16px 8px;
+                        font-size: 1.4rem;
+                        text-align: center;
+                        width: 180px;
+                        font-weight: 800;
+                        border-radius: 15px;
+                        margin: auto;
+    
+                    }    
+                }
+            }
+
+            .card__application--wrapper{
+                display: flex;
+                flex-direction: column;
+                padding: 1rem 1.5rem;
+                .item{
+                    padding: 5px 10px;
+                    display: flex;
+                    flex-direction: column;
+                    margin: .5rem 0;
+                    width: 100%;
+                    .item__header{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin: .5rem 0;
+                        .left,
+                        .right{
+                            margin: 0 1rem;
+                        }
+                    }
+
+                    .content__btn-wrapper{
+                        min-width: 200px;
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        padding: 5px;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                    }
+
+                    .details{
+                        margin: 0 1rem;
+
+                        .proof{
+                            max-height: 400px;
+                            max-width: 600px;
+                            margin: 1rem;
+                        }
+
+                        .picture{
+                            max-height: 300px;
+                            max-width: 300px;
+                            margin: 1rem;
+                        }
+        
+                        .signature{
+                            max-height: 300px;
+                            max-width: 600px;
+                            margin: 1rem;
+                        }
+                    }
+
+                    .form__reject{
+                        width: 100%;
+                        padding: 1rem;
+                    }
+                }
+
+                .yellow--item{
+                    border: 1px solid #dbb90f6c;
+                    background:  #ffd50449;
+                }
+
+                .blue--item{
+                    border: 1px solid #1b64b780;
+                    background: #1b66bb3a;
+                }
+
+                .orange--item{
+                    border: 1px solid #ffa03386;
+                    background: #ffa0334d;
+                }
+
+                .violet--item{
+                    border: 1px solid #cd32c870;
+                    background: #cd32c84d;
+                }
+
+                .red--item{
+                    border: 1px solid #e2452267;
+                    background: #e245222f;
+                }
+
+                .green--item{
+                    border: 1px solid #15c53b63;
+                    background: #15c53b33;
+                }            
+            }
+            
+        }
+
+        .forPayment{
+            order: 2;
+        }
+
+        .pending{
+            order: 4;
+        }
+
+        .forProcessing{
+            order: 3;
+        }
+
+        .forRelease{
+            order: 1;
+        }
+
+        .claimed{
+            order: 5;
+        }
+
+        .rejected{
+            order: 6;
+        }
+    }
+
+    .blue{
+        color: #1B63B7;
+        border: solid 5px #1B63B7;
+    }
+    .blue-bg{
+        background-color: #1B63B7;
+    }
+    .yellow{
+        color: #FFD704;
+        border: solid 5px #FFD704;
+    }
+    .yellow-bg{
+        background-color: #FFD704;
+    }
+    .orange{
+        color: #FFA133;
+        border: solid 5px #FFA133;
+    }
+    .orange-bg{
+        background-color: #FFA133;
+    }
+    .violet{
+        color: #CD32C7;
+        border: solid 5px #CD32C7;
+    }
+    .violet-bg{
+        background-color: #CD32C7;
+    }
+    .red{
+        color: #E24522;
+        border: solid 5px #E24522;
+    }
+    .red-bg{
+        background-color: #E24522;
+    }
+    .green{
+        color: #15C53C;
+        border: solid 5px #15C53C;
+    }
+    .green-bg{
+        background-color: #15C53C;
+    }
+    .dark-green-bg{
+        background-color: #0d7a25;
+    }
+}
+
+
+.item__btn{
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.item__btn.blue-bg{
+    margin-left: auto;
+}
+
+.item__btn--blue{
+    background-color: #1B63B7;
+}
+
+.item__btn--green{
+    background-color: #0d7a25;
+}
+
+.item__btn--red{
+    background-color: #E24522;
+}
+
+@media screen and (min-width: 600px) {
+    .application-status-page{
+        &__items{
+            &--card{
+                .card--header{
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: center;
+                }
+
+                .item{
+                    padding: 1rem 1.5rem;
+                }
+                .content{
+                    margin-right: 1rem;
+                    width: 100%;
+
+                    .name{
+                        font-size: 2rem;
+                    }
+                    .date{
+                        font-size: 1.2rem;
+                    }
+
+                    .text{
+                        text-align: right;
+                    }
+
+                }
+
+                .status{
+                    .label{
+                        margin: 0 1rem;
+                    }
+                }
+
+                .right{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

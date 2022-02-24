@@ -1,0 +1,191 @@
+header.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    min-height: 60px;
+    padding: 0 5%;
+    font-weight: 600;
+    position: fixed;
+    z-index: 100;
+
+    .logo{
+        color:white;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .logo-img{
+        width: 30px;
+        height: 30px;
+        margin: 0 10px;
+    }
+    
+    .logo-wrapper {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        max-width: 120px;
+        width: 20%;
+        min-width: 100px;
+        
+    }
+
+    nav{
+        width: 60%;
+        ul{
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            li{
+                margin: 0 2%;
+            }
+        }
+    }
+
+    .account{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 20%;
+        min-width: 180px;
+
+        .navbar__signup{
+            padding: 3px 8px;
+            background: none;
+            border: 3px white solid;
+            border-radius: 15%;
+            font-weight: 600;
+            font-size: 1rem;
+            color: white;
+            margin: .5rem;
+        }
+
+        .navbar__login{
+            margin: .5rem;
+            cursor: pointer;
+        }
+
+        &__dropdown{
+            position: absolute;
+            text-align: center;
+            height: 100%;
+            margin-left: auto;
+            min-width: 200px;
+            .username{
+                // position: relative;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .username--black{
+                color: black;
+            }
+            ul{
+                padding: 0;
+                padding: 1.5rem 1rem;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                li{
+                    margin: .5rem;
+                    color: black;
+                }
+            }
+
+            .listitem{
+                cursor: pointer;
+            }
+        }
+
+        &__dropdown--white{
+            background: rgb(233, 229, 229);
+        }
+        
+    }
+
+
+
+    
+}
+
+.logout-btn{
+    padding: 6px 10px;
+    font-weight: 600;
+    border-radius: 15px;
+}
+
+// header.navbar--user{
+//     background-color: #454343;
+// }
+
+.badge{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 25px;
+    height: 25px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+
+.dot--red{
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+}
+
+.status{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 1000px)
+{
+    header{
+        nav{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    header{
+        padding: 0 10px;
+        .logo{
+            font-size: .8rem;
+        }
+        .account{
+            width: 70%;
+            min-width: 90px;
+            justify-content: flex-end;
+            .navbar__sign-up{
+                font-size: .8rem;
+            }
+            .navbar__login{
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+.navbar-buffer{
+    height: 10vh;
+    width: 100%;
+}
+
+
+
+

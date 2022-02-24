@@ -1,0 +1,63 @@
+.criteriaLabel {
+    margin-left: 5px;
+    text-transform:capitalize;
+}
+
+.ml10 {
+    margin-left: 8px;
+    width: 120px;
+    border-radius: 5px;
+}
+
+.box {
+    width: 100%;
+}
+
+.mr10 {
+    margin: 10px 10px 10px 0;
+}
+
+.itemName {
+    border-radius: 5px;
+}
+
+.page-header-admin{
+    margin: 1em auto;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    color: #1E4186;
+    max-width: 1200px;
+    width: 90%;
+    text-transform: uppercase;
+}
+
+.left-section{
+    width: 100%;
+}
+
+.right-section{
+    width: 50%;
+}
+
+.criteria-list{
+    width: 600px;
+}
+
+.itemsContainer{
+    width: 100%;
+    padding-top: 20px;
+}
+
+.bottom-spacer{
+    padding-bottom: 10px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+  }
+  
+.column {
+    flex: 50%;
+  }

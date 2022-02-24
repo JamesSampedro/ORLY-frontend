@@ -1,0 +1,138 @@
+.overlay{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.7);
+    z-index: 1000;
+}
+
+.login{
+    width: 90%;
+    max-width: 400px;
+    margin: 5rem auto;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    z-index: 1000;
+    &__close{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0;
+        background: rgb(255, 255, 255);
+        transform: translateY(1px);
+        position: relative;
+        span{
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+
+        span:hover{
+            position: relative;
+            transform: scale(1.1);
+            background: rgb(226, 23, 23);
+            color: white;
+        }
+    }
+    &__branding{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgb(255, 255, 255);
+        padding: .5rem 1rem 1rem;
+        &--logo{
+            font-size: 1.2rem;
+        }
+
+        &--catchphrase{
+            color: rgb(36, 35, 35);
+            span{
+                color: rgb(236, 236, 58);
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &__form{
+        padding: 1rem 2rem;
+        background: #1B6178;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--title{
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .input{
+            
+            .login__form--input{
+                padding: 8px;
+                margin: 5px 0;
+                border-radius: 5px;
+            }
+        }
+
+        &--login-options{
+            display: flex;
+            justify-content: space-between;
+            font-size: .7rem;
+            font-weight: 400;
+            margin: 1rem 0;
+            width: 100%;
+            label{
+                margin-left: 5px;
+            }
+            .forgot-password{
+                color: #89E3FF;
+                margin: auto;
+            }
+
+            .forgot-password:hover{
+                cursor: pointer;
+            }
+        }
+
+        &--login{
+            padding: 5px 20px;
+            border-radius: 25px;
+            width: 50%; 
+            margin: 1rem 0;
+            background: #062630;
+            color: white;
+            font-weight: 600;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        &--signup{
+            font-size: .7rem;
+            .link{
+                margin-left: 5px;
+                color: #89E3FF;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:400px){
+    .login__form--login-options{
+        font-size: .8rem;
+    }
+
+    .login__form--signup{
+        font-size: .8rem;
+    }
+
+    button.login__form--login{
+        padding: 3px 10px;
+        padding: 5px 40px;
+    }
+}

@@ -1,0 +1,164 @@
+.ayuda-program-page{
+    margin: 1rem 5% 2rem;
+    &-title{
+        background-color: #A6D9EA;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        h1{
+            color: $tertiary-color;
+            font-size: 1.2rem;
+            line-height: 1.2;
+            font-weight: 800;
+            margin-left: 10%;
+        }
+        &--name{
+            padding: 1rem
+        }
+
+        &--img{
+            width: 40%;
+            transform: translate(-20%, 25%);
+            outline: solid 1px black;
+            outline-offset: 5px; 
+        }
+    }
+
+    &--content{
+        margin: 1rem 5%;
+        h3{
+            margin: 1rem 0;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .essentials{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 1rem 0;
+            &-items{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                &--card{
+                    max-width: 200px;
+                    max-height: 250px;
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 1rem .5rem;
+                    h2{
+                        margin: 1rem 0 0;
+                        text-align: center;
+                        font-size: 1.2rem;
+                        color: white;
+                    }
+                    img{
+                        width: 40%;
+                    }
+                }
+            }
+            
+            #cash{
+                background-color: rgba(0, 120, 26,.6);
+            }
+
+            #food{
+                background-color: rgba(203, 97, 0, .6);
+            }
+
+            #water{
+                background-color: rgba(0, 120, 188, .6);
+            }
+
+            #medicalsupplies{
+                background-color: rgba(174, 125, 0, .6);
+            }
+        }
+
+        .priorities{
+            &--title{
+                font-weight: 700;
+            }
+            &--content{
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                margin: 1rem 0;
+                p{
+                    margin: .5rem 0;
+                }
+            }
+            p.note{
+                font-weight: 600;
+                color: rgb(58, 58, 58);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 425px){
+    .ayuda-program-page{
+        &-title{
+            margin-bottom: 5rem;
+            h1{
+                font-size: 1.5rem;
+                
+            }
+
+            &--img{
+                width: 45%;
+                max-width: 500px;
+                transform: translate(-25%, 25%);
+            }
+        }
+
+        
+    }
+}
+
+@media screen and (min-width: 600px)
+{
+    .ayuda-program-page{
+        &-title{
+            margin-bottom: 5rem;
+            h1{
+                font-size: 2rem;
+                
+            }
+
+            &--img{
+                width: 45%;
+                max-width: 500px;
+                transform: translate(-25%, 25%);
+            }
+        }
+
+        
+    }
+}
+
+
+@media screen and (min-width: 800px){
+    .ayuda-program-page{
+        &-title{
+            margin-bottom: 8rem;
+            h1{
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .ayuda-program-page-title h1{
+        font-size: 4rem
+    }
+
+}

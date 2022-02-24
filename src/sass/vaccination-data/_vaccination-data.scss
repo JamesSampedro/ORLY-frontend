@@ -1,0 +1,116 @@
+.vaccination-data-page{
+    
+    &__stats{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            padding: 1rem;
+            text-align: center;
+            min-height: 250px;
+            max-width: 300px;
+
+            .icon{
+                width: 70%;
+                max-width: 100px;
+                margin: 1rem 0;
+            }
+            
+
+            .numbers{
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+
+            .content{
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+
+            .numbers,
+            .content{
+                color: white;
+            }
+
+            .fit{
+                font-size: 1rem;
+                font-weight: 700;
+            }
+        }
+
+        .card--green{
+            background-color: #21D0C2;
+        }
+
+        .card--yellow{
+            background-color: #D7BA23;
+        }
+
+        .card--violet{
+            background-color: #A73DD9;
+        }
+
+        .card--orange{
+            background-color: #E37436;
+        }
+    }
+
+    &__content{
+        margin: 3rem 0;
+        
+        p{
+            margin: 1rem 0;
+            font-weight: 600;
+        }
+
+        &--information{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .vaccine-info{
+            margin: 1rem;
+            max-width: 500px;
+            min-width: 250px;
+            
+            li{
+                list-style-type: disc;
+            }
+        }
+
+        .vaccine-infographics{
+            display: none;
+            width: 100%;
+            margin: 1rem 0;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .vaccination-data-page{
+        &__content{
+            p{
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            .vaccine-info{
+                display: none;
+            }
+            .vaccine-infographics{
+                display: block;
+            }
+        }
+    }
+}

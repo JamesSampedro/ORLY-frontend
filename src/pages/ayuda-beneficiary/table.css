@@ -1,0 +1,70 @@
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 1rem .5rem;
+    text-align: center;
+    }
+  
+  table td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  table tr:hover {background-color: #ddd;}
+  
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #583E7A;
+    color: white;
+  }
+
+
+
+  .table-wrapper{
+      width: 100%;
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .residents-table-wrapper{
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+}
+
+  .page-number{
+    text-align: center;
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .table-btn--wrapper{
+    width: 100%;
+    display: flex;
+  }
+
+  .search-box{
+    margin: 1rem 0;
+    margin-left: auto;
+}
+
+td.data--centered{
+  text-align: center;
+}
+.page-header-guest{
+  margin: 1em auto;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  color: #1E4186;
+  max-width: 1200px;
+  width: 90%;
+  text-transform: uppercase;
+}

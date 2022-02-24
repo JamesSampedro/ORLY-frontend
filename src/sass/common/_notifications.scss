@@ -1,0 +1,16 @@
+.forms-notif{
+    max-width: 600px;
+    margin: 1.5rem auto;
+    padding: 3%;
+    text-align: center;
+    border-radius: 15px;
+
+    &__message--error{
+        color: #92000a;
+        font-size: 1rem;
+    }
+}
+
+.forms-notif--error{
+    background-color: rgba(255,153,153,.5);
+}

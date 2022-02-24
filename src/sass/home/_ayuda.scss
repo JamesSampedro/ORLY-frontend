@@ -1,0 +1,92 @@
+
+
+.ayuda{
+    margin-bottom: 2rem;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        border-radius: 15px;
+        background: rgb(72,125,142);
+        background: linear-gradient(138deg, rgba(72,125,142,1) 0%, rgba(150,203,220,1) 100%);
+        padding: 3rem 2rem;
+        margin: auto;
+        h1{
+            color: white;
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+        p{
+            color: white;
+        }
+
+        .cta{
+            cursor: pointer;
+            margin: 2rem auto;
+            padding: 16px 0;
+            width: 150px;
+            text-align: center;
+            color: white;
+            font-weight: 600;
+            background: #487D8E;
+            border-radius: 25px;
+        }
+    }
+}
+
+@media screen and (min-width: 500px){
+    .ayuda{
+
+        &__content{
+            padding: 3rem 3rem;
+            max-width: 500px;
+        }
+    }
+}
+
+@media screen and (min-width: 700px){
+    .ayuda{
+        min-height: 800px;
+        height: 100vh;
+        background: url("/src/img/ayuda-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 5rem;
+        &__content{
+            margin: 0;
+            margin-right: auto;
+            border-radius: 0;
+            max-width: 600px;
+            min-width: 400px;
+            width: 30vw;
+            height: 100%;
+            padding: 5rem;
+            background: rgb(72,125,142);
+            background: linear-gradient(138deg, rgba(72,125,142,.95) 0%, rgba(150,203,220,.90) 100%);
+
+            h1{
+                font-size: 2.5rem;
+                line-height: 1.2;
+            }
+            p{
+                font-size: 1rem;
+                line-height: 1.2;
+            }
+            .cta{
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .ayuda{
+        &__content{
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

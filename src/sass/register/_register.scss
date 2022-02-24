@@ -1,0 +1,117 @@
+.registration{
+    margin: 2rem 0;
+    &__progress{
+        margin: 1rem auto;
+        max-width: 600px;
+        width: 90%;
+        &--title{
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        &--sub-title{
+            font-weight: 500;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        &--visualization{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            &--step{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .step-number{
+                    text-align: center;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    background: rgb(119, 119, 119);
+                    color: white;
+                    font-weight: 500;
+                    font-size: .8rem;
+                }
+                .step-name{
+                    font-weight: 500;
+                }
+                
+            }
+
+            .active .step-number{
+                background: $secondary-color;
+            }
+            &--seperator{
+                width: 100px;
+                height: 2px;
+                background: black;
+                margin: auto 5px;
+            }
+        }
+    }
+
+    &__form{
+        
+        &--title{
+            width: 600px;
+            margin: 1rem auto;
+            font-weight: 600;
+        }
+
+        &--change-step{
+            margin: 1rem 0;
+            width: 100%;
+            display: flex;
+        }
+
+        &--requirements{
+            padding: 0;
+            margin: 1rem 0;
+            padding: 5%;
+            border: 8px solid #A3D5E5;
+
+            .title{
+                margin-bottom: 1rem;
+            }
+
+            .requirements{
+                padding: 2% 10%;
+                li{
+                    list-style-type: disc;
+                }
+            }
+        }
+
+
+    }
+}
+
+
+.registration-request-sent-page{
+    width: 95%;
+    max-width: 800px;
+    padding: 5%;
+    margin: 1.5rem auto;
+    background-color: #F2FEF2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p{
+        font-size: 1.2rem;
+        color: black;
+    }
+    button{
+        margin: 1rem 0 0;
+    }
+}
+
+
+@media screen and (min-width: 500px){
+    .registration-request-sent-page{
+        padding: 3%;
+    }
+}

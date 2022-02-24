@@ -1,0 +1,9 @@
+<svg width="66" height="65" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="vaccination-data">
+<rect id="graph1" x="8.76099" y="13.991" width="6.97753" height="44.2123" fill="white"/>
+<rect id="graph2" x="22.7161" y="7.11353" width="6.97753" height="51.0897" fill="white"/>
+<rect id="graph3" x="36.6709" y="21.851" width="6.97753" height="36.3523" fill="white"/>
+<rect id="graph4" x="50.626" y="0.236053" width="6.97753" height="57.9672" fill="white"/>
+<rect id="base-graph" y="56" width="66" height="9" fill="white"/>
+</g>
+</svg>

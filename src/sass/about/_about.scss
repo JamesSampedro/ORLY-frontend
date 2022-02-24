@@ -1,0 +1,209 @@
+.about-page{
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    align-items: center;
+    &__intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        &--map{
+            width: 100%;
+            max-width: 350px;
+        }
+
+        &--description{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 1rem;
+            
+            border-radius: 15px;
+            padding: 2rem;
+            
+            .content{
+                text-align: justify;
+            }
+
+            .title{
+                margin: 1rem 0;
+            }
+        }
+    }
+
+    &__orly{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+        border-radius: 15px;
+        background-color: white;
+        margin: 1rem 0;
+        .heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .logo{
+                width: 50px;
+            }
+
+            .title{
+                margin: 1rem 0;
+                color: #233D71;
+                font-size: 2rem;
+            }
+        }
+
+        .content{
+            text-align: justify;
+        }
+    }
+
+    &__officials{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 1rem 0;
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 2rem;
+        .title{
+            margin: 2rem 0;
+            line-height: 1.2;
+        }
+
+        .item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            margin: .5rem 0;
+        }
+    }
+
+    &__faq{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+        max-width: 1200px;
+        margin: 1.5rem 0;
+        .title{
+            color: #1E4186;
+            font-weight: 800;
+            margin: 1rem 0 2rem;
+        }
+        .item{
+            margin: 1.5rem 0;
+            text-align: left;
+            p{
+                margin: 0;
+                padding: .5rem 1rem;
+                .letter{
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+            }
+            .question{
+                border-left: 5px solid red;
+                .letter{
+                    color: red;
+                }
+            }
+            .answer{
+                border-left: 5px solid black;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 768px){
+    .about-page{
+        &__officials{
+            .item{
+                flex-direction: row-reverse;
+                .position{
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                }
+                .name{
+                    font-weight: 600;
+                }
+            }
+        }
+
+        &__faq{
+            padding: 2rem 3rem;
+            background-color: white;
+            border-radius: 25px;
+            .title{
+                font-size: 2rem;
+            }
+            .item{
+                align-self: flex-start;
+                
+                p{
+                    font-size: 1.2rem;
+                    
+                    .letter{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1000px){
+    .about-page{
+        &__intro{
+            flex-direction: row;
+            margin-bottom: 1.5rem;
+            &--map{
+                width: 30%;
+                order: 2;
+                margin-left: 2rem;
+                height: 300px;
+            }
+
+            &--description{
+                height: 300px;
+                max-width: 1000px;
+                background-color: white;
+                .title{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        &__orly{
+            margin: 1.5rem 0;
+            padding: 2rem 3rem;
+            align-items: flex-start;
+
+            .heading{
+                flex-direction: row-reverse;
+                margin: 1rem 0;
+
+                .title{
+                    font-size: 2.5rem;
+                    margin-right: 1rem;
+
+                }
+            }
+        }
+    }
+}
+
